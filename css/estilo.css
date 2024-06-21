@@ -1,84 +1,99 @@
-/* Estrutura do site
-*/
+/* estilo.css */
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body{
+/* Body */
+body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #fff url(../imagens/fundo.png) repeat;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    
+    align-items: center;
 }
-/* Container principal */
-#container {
-    flex: 1;
+
+/* Wrapper */
+#wrapper {
+    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+/* Topo */
+#topo {
+    width: 100%;
+    background: #fff;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#logo img {
+    max-height: 150px;
+    padding: 10px;
+}
 
+/* Menu */
 #menu {
-    margin-top: 230px;
-    display: flex;
-    justify-content: center; 
     width: 100%;
+    background: #3d212a;
+    padding: 10px 0;
 }
 
 #navegacao {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
 #navegacao li {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     position: relative;
-    background: #fff;
 }
-
 
 #navegacao a {
     text-decoration: none;
-    color: #000; /* fallback color */
+    color: #fff; /* Cor do texto branco */
     padding: 10px 20px;
     font-weight: bold;
-    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    color: transparent;
-    display: block; 
-    border-radius: 10px; 
-    position: relative;
-    z-index: 1; 
+    display: block;
+    border-radius: 10px;
 }
 
 #navegacao a:hover, #navegacao a:focus, #navegacao a.selected {
-    background-color: #c2289b; 
-    color: rgb(248, 17, 17); 
+    background-color:#ab5973;
+    color: #fff;
 }
 
+/* Wrapper for content */
+#content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
 
-/* Formulário */
-.form-container {
+/* Container principal */
+#container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 100%;
+    max-width: 750px;
+    margin: 20px 0;
+}
+
+/* Formulário */
+.form-container {
+    width: 100%;
 }
 
 .form-group {
@@ -96,7 +111,7 @@ body{
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 1px;
 }
 
 .form-group textarea {
@@ -106,7 +121,7 @@ body{
 button {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #3d212a;
     color: white;
     border: none;
     border-radius: 4px;
@@ -114,17 +129,15 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color:#ab5973
 }
 
 /* Rodapé */
-#container-rodape {
-    background: #294c71;
-    padding: 20px;
+#rodape {
+    width: 100%;
+    background: #3d212a;
     color: #fff;
     text-align: center;
-}
-
-#rodape {
-    color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
