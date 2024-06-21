@@ -2,37 +2,129 @@
 */
 
 * {
-    margin:0;
-    padding:0;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: #fff url(../imagens/fundo.png) repeat-x;
+    background: #fff url(../imagens/fundo.png) repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     
 }
-
-#container{
-    width: 750px;
-    margin: 0 auto;
+/* Container principal */
+#container {
+    flex: 1;
     display: flex;
-    flex-direction: column; 
-    align-items: center;     padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
- /*Rodape*/
+
+
+#menu {
+    margin-top: 230px;
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+
+#navegacao {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#navegacao li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    background: #fff;
+}
+
+
+#navegacao a {
+    text-decoration: none;
+    color: #000; /* fallback color */
+    padding: 10px 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: block; 
+    border-radius: 10px; 
+    position: relative;
+    z-index: 1; 
+}
+
+#navegacao a:hover, #navegacao a:focus, #navegacao a.selected {
+    background-color: #c2289b; 
+    color: rgb(248, 17, 17); 
+}
+
+
+/* Formulário */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Rodapé */
 #container-rodape {
     background: #294c71;
     padding: 20px;
     color: #fff;
     text-align: center;
-   
 }
 
 #rodape {
-    width: 750px;
-    margin:0 auto;
     color: #fff;
 }
-
