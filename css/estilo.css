@@ -1,0 +1,38 @@
+/* Estrutura do site
+*/
+
+* {
+    margin:0;
+    padding:0;
+
+}
+
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(../imagens/fundo.png) repeat-x;
+    
+}
+
+#container{
+    width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     padding: 10px;
+}
+ /*Rodape*/
+#container-rodape {
+    background: #294c71;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+   
+}
+
+#rodape {
+    width: 750px;
+    margin:0 auto;
+    color: #fff;
+}
+
